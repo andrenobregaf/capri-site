@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capri | Joias & Semijoias</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #111;
+      font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1602752250015-52934bc45613') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 400;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .product {
+      text-align: left;
+    }
+
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .product span {
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px;
+      text-align: center;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: black;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CAPRI</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Coleções</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Elegância sem esforço</h2>
+    <p>Peças escolhidas com intenção e estilo</p>
+    <a href="https://www.instagram.com/joias.capri/" target="_blank">
+      <button class="btn">Ver no Instagram</button>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Coleção</h2>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+      <h3>Colar Minimalista</h3>
+      <span>R$ 129,90</span>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1588444650700-6b6b6b6b6b6b">
+      <h3>Brincos Elegantes</h3>
+      <span>R$ 89,90</span>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb">
+      <h3>Anel Dourado</h3>
+      <span>R$ 79,90</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Sobre a Capri</h2>
+  <p class="about">
+    A Capri nasce da busca pela elegância sem esforço. Cada peça é cuidadosamente selecionada
+    para refletir estilo, leveza e sofisticação no dia a dia.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Capri | Joias & Semijoias</p>
+  <p>
+    <a href="https://www.instagram.com/joias.capri/" target="_blank">
+      Instagram
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
