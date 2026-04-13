@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capri | Joias & Semijoias</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  color:#111;
+  background:#fff;
+  overflow-x:hidden;
+}
+
+/* LOADING */
+.loader {
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+  font-family:'Playfair Display';
+  letter-spacing:4px;
+}
+
+/* HEADER */
+header {
+  position:fixed;
+  width:100%;
+  padding:25px 60px;
+  display:flex;
+  justify-content:space-between;
+  background:rgba(255,255,255,0.9);
+  backdrop-filter:blur(10px);
+  z-index:100;
+}
+
+header h1 {
+  font-family:'Playfair Display';
+  letter-spacing:4px;
+}
+
+nav a {
+  margin-left:30px;
+  text-decoration:none;
+  color:#111;
+  font-size:13px;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1617038220319-276d3cfab638') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.hero h2 {
+  font-family:'Playfair Display';
+  font-size:60px;
+}
+
+.btn {
+  margin-top:25px;
+  padding:14px 40px;
+  border:1px solid white;
+  background:transparent;
+  color:white;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn:hover {
+  background:white;
+  color:black;
+}
+
+/* SECTION */
+.section {
+  padding:120px 60px;
+}
+
+.section h2 {
+  font-family:'Playfair Display';
+  font-size:40px;
+  margin-bottom:60px;
+}
+
+/* GRID */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+
+.card img {
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  transition:.5s;
+}
+
+.card:hover img {
+  transform:scale(1.05);
+}
+
+/* EDITORIAL */
+.editorial {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.editorial img {
+  width:100%;
+  height:500px;
+  object-fit:cover;
+}
+
+.editorial p {
+  line-height:1.8;
+  color:#555;
+}
+
+/* INSTAGRAM */
+.instagram {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.instagram img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+/* WHATS */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:black;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+/* ANIMAÇÃO SCROLL */
+.fade {
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.fade.show {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+  .grid {grid-template-columns:1fr;}
+  .editorial {grid-template-columns:1fr;}
+  .instagram {grid-template-columns:1fr 1fr;}
+  .hero h2 {font-size:36px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="loader">CAPRI</div>
+
+<header>
+  <h1>CAPRI</h1>
+  <nav>
+    <a href="#">COLEÇÃO</a>
+    <a href="#">SOBRE</a>
+    <a href="#">CONTATO</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Elegância sem esforço</h2>
+    <a href="https://www.instagram.com/joias.capri/" target="_blank">
+      <button class="btn">EXPLORAR</button>
+    </a>
+  </div>
+</section>
+
+<section class="section fade">
+  <h2>Coleção</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb">
+      <h3>Colar Capri</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+      <h3>Brincos Dourados</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588444650700-6b6b6b6b6b6b">
+      <h3>Anel Minimalista</h3>
+    </div>
+  </div>
+</section>
+
+<section class="section editorial fade">
+  <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+  <div>
+    <h2>Sobre a Capri</h2>
+    <p>
+      Cada peça traduz elegância natural. A Capri nasce para mulheres que entendem que o verdadeiro luxo está na simplicidade bem feita.
+    </p>
+  </div>
+</section>
+
+<section class="section fade">
+  <h2>Instagram</h2>
+  <div class="instagram">
+    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+    <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb">
+    <img src="https://images.unsplash.com/photo-1588444650700-6b6b6b6b6b6b">
+    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+  </div>
+</section>
+
+<footer class="section">
+  <p>© 2026 Capri</p>
+</footer>
+
+<div class="whatsapp" onclick="window.open('https://wa.me/5511999999999')">
+💬
+</div>
+
+<script>
+// loading
+window.onload = () => {
+  document.querySelector(".loader").style.display = "none";
+}
+
+// scroll animation
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
